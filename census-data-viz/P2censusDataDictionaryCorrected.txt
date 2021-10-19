@@ -1,0 +1,129 @@
+*** Data Dictionary for the 2019 Census American Community Survey (5-year) ***
+*** Compiled by WM Harris (March 2021) for IGME-102
+
+* Data collection URLs **********
+https://api.census.gov/data/2019/acs/acs5?get=B01001_001E,B01001_002E,B01001_026E,B03002_003E,B03002_013E,B02001_003E,B02001_004E,B02001_005E,B02001_006E,B03002_008E,B03002_018E,B02001_008E,B19013_001E,B19013A_001E,B19013B_001E,B19013C_001E,B19013D_001E,B19013E_001E,B19013F_001E,B19013G_001E,B19013H_001E,B19013I_001E,B19123_001E,B19123_002E,B19123_003E,B25107_001E,C17002_001E,C17002_002E,C17002_003E,C17002_004E,C17002_005E,C17002_006E,C17002_007E,C17002_008E,NAME&for=state:*
+-with US version-
+https://api.census.gov/data/2019/acs/acs5?get=B01001_001E,...,NAME&for=us:*	
+
+https://api.census.gov/data/2019/acs/acs5?get=B27015_001E,B27015_002E,B27015_003E,B27015_004E,B27015_005E,B27015_006E,B27015_007E,B27015_008E,B27015_009E,B27015_010E,B27015_011E,B27015_012E,B27015_013E,B27015_014E,B27015_015E,B27015_016E,B27015_017E,B27015_018E,B27015_019E,B27015_020E,B27015_021E,B27015_022E,B27015_023E,B27015_024E,B27015_025E,B27015_026E,NAME&for=state:*
+-with US version-
+https://api.census.gov/data/2019/acs/acs5?get=B27015_001E,...,NAME&for=us:*
+
+Note that one of the "states" is "United States" for tallying country-wide totals/medians.
+	
+* Census JSON Data values (53 items: 1 item per "state") *************
+
+	[State]				Full name of state
+	[Latitude]			global y (range: 18.15 ... 66.16; 27.99 ... 44.75 excl. AK, HI, PR)
+	[Longitude]			global x (range: -155.84 ... -66.3; -120.74 ... -68.97 excl. AK, HI, PR)
+	
+	[Sex]
+		B01001_001E		Total state population (range: 581,024 ... 39,283,497 excl. US)
+		B01001_002E		Total!!Male
+		B01001_026E		Total!!Female
+
+		
+	[Race/Ethnicity of state population]
+		B03002_003E		white, non-Hispanic/Latino
+		B03002_013E		white, Hispanic/Latino
+		B02001_003E		Black
+		B02001_004E		American Indian/AK native
+		B02001_005E		Asian
+		B02001_006E		Hawaiian/Pacific Islander
+		B03002_008E		other, non-Hispanic/Latino
+		B03002_018E		other, Hispanic/Latino
+		B02001_008E		2 or more races
+	
+	[Median household income by race/ethnicity]
+		B19013_001E		Everyone
+		B19013A_001E	White alone
+		B19013B_001E	Black alone
+		B19013C_001E	American Indian/AK native alone
+		B19013D_001E	Asian alone
+		B19013E_001E	Hawaiian/Pacific Islander alone
+		B19013F_001E	other alone
+		B19013G_001E	2 or more races
+		B19013H_001E	white, non-Hispanic/Latino
+		B19013I_001E	Hispanic/Latino
+	
+	[Cash Public Assistance or Food Stamps/SNAP]
+		B19123_001E		Total
+		B19123_002E		Total!!With cash public assistance income or households receiving Food Stamps/SNAP benefits
+		B19123_003E		Total!!No cash public assistance income or household Food Stamps/SNAP benefits
+
+	[Housing value]
+		B25107_001E		median value of housing
+
+	[Ratio of income to poverty level]
+		C17002_001E		Total
+		C17002_002E		Total!!Under .50
+		C17002_003E		Total!!.50 to .99
+		C17002_004E		Total!!1.00 to 1.24
+		C17002_005E		Total!!1.25 to 1.49
+		C17002_006E		Total!!1.50 to 1.84
+		C17002_007E		Total!!1.85 to 1.99
+		C17002_008E		Total!!2.00 and over
+	
+	[Health insurance coverage status and type by household income in the past 12 months]
+		B27015_001E	Total:
+		B27015_002E	Total:!!Under $25,000:
+		B27015_003E	Total:!!Under $25,000:!!With health insurance coverage
+		B27015_004E	Total:!!Under $25,000:!!With health insurance coverage!!With private health insurance
+		B27015_005E	Total:!!Under $25,000:!!With health insurance coverage!!With public coverage
+		B27015_006E	Total:!!Under $25,000:!!No health insurance coverage
+		B27015_007E	Total:!!$25,000 to $49,999:
+		B27015_008E	Total:!!$25,000 to $49,999:!!With health insurance coverage
+		B27015_009E	Total:!!$25,000 to $49,999:!!With health insurance coverage!!With private health insurance
+		B27015_010E	Total:!!$25,000 to $49,999:!!With health insurance coverage!!With public coverage
+		B27015_011E	Total:!!$25,000 to $49,999:!!No health insurance coverage
+		B27015_012E	Total:!!$50,000 to $74,999:
+		B27015_013E	Total:!!$50,000 to $74,999:!!With health insurance coverage
+		B27015_014E	Total:!!$50,000 to $74,999:!!With health insurance coverage!!With private health insurance
+		B27015_015E	Total:!!$50,000 to $74,999:!!With health insurance coverage!!With public coverage
+		B27015_016E	Total:!!$50,000 to $74,999:!!No health insurance coverage
+		B27015_017E	Total:!!$75,000 to $99,999:
+		B27015_018E	Total:!!$75,000 to $99,999:!!With health insurance coverage
+		B27015_019E	Total:!!$75,000 to $99,999:!!With health insurance coverage!!With private health insurance
+		B27015_020E	Total:!!$75,000 to $99,999:!!With health insurance coverage!!With public coverage
+		B27015_021E	Total:!!$75,000 to $99,999:!!No health insurance coverage
+		B27015_022E	Total:!!$100,000 or more:
+		B27015_023E	Total:!!$100,000 or more:!!With health insurance coverage
+		B27015_024E	Total:!!$100,000 or more:!!With health insurance coverage!!With private health insurance
+		B27015_025E	Total:!!$100,000 or more:!!With health insurance coverage!!With public coverage
+		B27015_026E	Total:!!$100,000 or more:!!No health insurance coverage
+
+
+*** COVID bonus data ***************************************
+Adapted from
+https://data.cdc.gov/NCHS/Weekly-counts-of-deaths-by-jurisdiction-and-race-a/qfhf-uhaa
+
+* 2020 monthly data on the number of deaths from all causes by [state] of occurrence and race and Hispanic origin. Numbers of deaths are also shown for all causes excluding COVID-19, and for COVID-19.
+
+Note that one of the "states" is "United States" for tallying country-wide totals.
+
+* COVID 2020 JSON Data values, 11630 items: 1 per unique combo with deaths *****
+
+	State				Full name of state (53)
+	
+    Month				1 ... 12
+    
+    State abbreviation	Two-letter string (53)
+    	
+    Race				Non-Hispanic White
+    					Non-Hispanic American Indian or Alaska Native
+    					Non-Hispanic Black
+    					Non-Hispanic Asian
+    					Hispanic
+    					Other
+    					
+    Cause of death		All Cause
+    					All Cause excluding COVID-19
+    					COVID-19
+    
+    Deaths				Count of deaths
+    
+    Difference 2015-19	2020 deaths minus average 2015-19 deaths for same month
+    
+    Type				Predicted (weighted)
+    					Unweighted
